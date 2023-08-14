@@ -29,8 +29,8 @@
                     out.print("<td>"+rs.getString("Play_Ground")+"</td>");
                     out.print("<td>"+rs.getString("Referee")+"</td>");
                     out.print("<td>"+rs.getString("Adversary")+"</td>");
-                    out.print("<td><a href='editmatch.jsp?mtchid="+rs.getString("Mt_id")+"'>Edit</a></td>");
-                    out.print("<td><a href='editmatch.jsp?mtchid="+rs.getString("Mt_id")+"'>Delete</a></td></tr>");
+                    out.print("<td><a href='edit_match.jsp?mtchid="+rs.getString("Mt_id")+"'>Edit</a></td>");
+                    out.print("<td><a href='delete.jsp?mtchid="+rs.getString("Mt_id")+"'>Delete</a></td></tr>");
     }
 //    if(!rs.next()){
 //              out.print("<tr><td colspan(5)> no data added <button class='btn'>add new Match</td></tr>");

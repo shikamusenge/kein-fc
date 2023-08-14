@@ -8,7 +8,7 @@
             </form>
             <hr>
         
-<form action="addMatch.jsp" class="card">
+            <form action="addMatch.jsp" class="card" method="post">
         <div class="card-title"><h3>Add New Match</h3> <h3 class="close" onclick="closeCard()">&times</h3></div>
         <div id="card-body">
                 <%
@@ -22,17 +22,17 @@ if(session.getAttribute("msg")!=null){
                 }%>
             <div class="input-group">
                 <div><label for="user">Date</label></div>
-                <div><input type="Date" name="M_date" placeholder="Choose Matche Date"></div>
+                <div><input type="Date" name="date" placeholder="Choose Matche Date"></div>
             </div>
             <div class="input-group">
                 <div><label for="M_pg">PlayGround </label></div>
-                <div><input type="text" name="M_pg" placeholder="Select play ground"></div>
+                <div><input type="text" name="pg" placeholder="Select play ground"></div>
             </div>
                  <div class="input-group">
                 <div><label for="user">Referee </label></div>
                 <div>
-                    <select  name="referee">
-                        <option value="" disabled selected> Select Referee</option>
+                    <select name="ref_id">
+                        <option value="" disabled selected > Select Referee</option>
                        <%
    String sql = "SELECT Ref_id,CONCAT_WS(' ',F_Name,L_Name) as Names FROM Referees";
   PreparedStatement statement = conn.prepareStatement(sql);

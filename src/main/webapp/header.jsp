@@ -20,6 +20,7 @@ response.sendRedirect("index.jsp?page=login");
     </head>
     <body>
 <nav>
+    <!--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-->
     <div id="container">
     <div id="menu-icon" class="d-none">
         <span class="mat">menu</span>
@@ -28,7 +29,7 @@ response.sendRedirect("index.jsp?page=login");
         Kein Fc
     </div>
     <div id="nav-link" class="d-flex">
-        <div class="nav-link"><a href="dashBoard.jsp">DashBoard</a></div>
+        <div class="nav-link"><a href="dashboard.jsp">DashBoard</a></div>
         <div class="nav-link"><a href="matches.jsp">Matches</a></div>
         <div class="nav-link"><a href="referees.jsp">Referees</a></div>
         <div class="nav-link"><a href="adversaries.jsp">Adversaries</a></div>

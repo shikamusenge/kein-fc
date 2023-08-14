@@ -14,6 +14,7 @@
     ResultSet resultSet = statement.executeQuery();
     if(resultSet.next()) {
                 session.setAttribute("user",userName);
+                session.setAttribute("userId",resultSet.getString("user_id"));
               response.sendRedirect("dashboard.jsp");
     }else{
               session.setAttribute("msg","Invalid username or Password");
